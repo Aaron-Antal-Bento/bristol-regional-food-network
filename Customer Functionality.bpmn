@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="f127538" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.10.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="aa92d9c" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.10.0">
   <bpmn:process id="Process_1l2s0sb" name="Customer Model" isExecutable="true">
     <bpmn:startEvent id="StartEvent_1" name="Customer opens market place">
       <bpmn:outgoing>Flow_0ygx7vc</bpmn:outgoing>
@@ -159,13 +159,6 @@
     <bpmn:sequenceFlow id="Flow_0ax7t20" name="No" sourceRef="Gateway_1tnpw6h" targetRef="Activity_0pc6daz">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=false</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:serviceTask id="Activity_1u2s7vv" name="Process payment">
-      <bpmn:extensionElements>
-        <zeebe:taskDefinition type="process-payment" retries="3" />
-      </bpmn:extensionElements>
-      <bpmn:incoming>Flow_1c8iuhf</bpmn:incoming>
-      <bpmn:outgoing>Flow_1de4ppf</bpmn:outgoing>
-    </bpmn:serviceTask>
     <bpmn:serviceTask id="Activity_0w10ixh" name="Create market place order">
       <bpmn:extensionElements>
         <zeebe:taskDefinition type="create-order" />
@@ -189,6 +182,13 @@
       <bpmn:outgoing>Flow_0lmnja5</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:sequenceFlow id="Flow_0lmnja5" sourceRef="Activity_0pc6daz" targetRef="Event_1vybtl1" />
+    <bpmn:callActivity id="Activity_1u2s7vv" name="Process payment">
+      <bpmn:extensionElements>
+        <zeebe:calledElement processId="Process_io8jh5d" propagateAllChildVariables="false" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1c8iuhf</bpmn:incoming>
+      <bpmn:outgoing>Flow_1de4ppf</bpmn:outgoing>
+    </bpmn:callActivity>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1l2s0sb">
@@ -279,8 +279,11 @@
           <dc:Bounds x="1901" y="167.5" width="58" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_148zgqm_di" bpmnElement="Activity_1u2s7vv">
-        <dc:Bounds x="1720" y="190" width="100" height="80" />
+      <bpmndi:BPMNShape id="Event_1vybtl1_di" bpmnElement="Event_1vybtl1">
+        <dc:Bounds x="2092" y="342" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2093" y="385" width="35" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_111mz7z_di" bpmnElement="Activity_0w10ixh">
         <dc:Bounds x="2210" y="190" width="100" height="80" />
@@ -288,14 +291,11 @@
       <bpmndi:BPMNShape id="BPMNShape_0h96pfp" bpmnElement="Activity_0klg2o6">
         <dc:Bounds x="2050" y="190" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1vybtl1_di" bpmnElement="Event_1vybtl1">
-        <dc:Bounds x="2092" y="342" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="2093" y="385" width="35" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_0yplwvk" bpmnElement="Activity_0pc6daz">
         <dc:Bounds x="1960" y="320" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1t43yij_di" bpmnElement="Activity_1u2s7vv">
+        <dc:Bounds x="1720" y="190" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0x9yxqz_di" bpmnElement="Flow_0x9yxqz">
         <di:waypoint x="115" y="230" />
