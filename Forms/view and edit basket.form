@@ -1,0 +1,139 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1mm1329",
+  "components": [
+    {
+      "text": "### Shopping Basket & Checkout",
+      "type": "text",
+      "id": "Heading_title",
+      "layout": {
+        "row": "row1",
+        "col": 16
+      }
+    },
+    {
+      "text": "##### Basket Items",
+      "type": "text",
+      "id": "Subheading_items",
+      "layout": {
+        "row": "row4",
+        "col": 16
+      }
+    },
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "id": "Product_name",
+      "key": "productName",
+      "layout": {
+        "row": "row5",
+        "col": 8
+      }
+    },
+    {
+      "label": "Stock Status",
+      "type": "textfield",
+      "id": "Stock_status",
+      "key": "stockStatus",
+      "layout": {
+        "row": "row5",
+        "col": 4
+      }
+    },
+    {
+      "label": "Unit Price",
+      "type": "number",
+      "id": "Unit_price",
+      "key": "unitPrice",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row7",
+        "col": 5
+      }
+    },
+    {
+      "label": "Quantity",
+      "type": "number",
+      "id": "Quantity",
+      "key": "quantity",
+      "decimalDigits": 0,
+      "validate": {
+        "required": true,
+        "min": 1
+      },
+      "layout": {
+        "row": "row7",
+        "col": 5
+      }
+    },
+    {
+      "label": "Item Subtotal",
+      "type": "number",
+      "id": "Item_subtotal",
+      "key": "itemSubtotal",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row7",
+        "col": 6
+      }
+    },
+    {
+      "label": "Remove Item",
+      "action": "submit",
+      "type": "button",
+      "id": "Btn_remove_item",
+      "layout": {
+        "row": "row8",
+        "col": 16
+      }
+    },
+    {
+      "label": "Basket Subtotal",
+      "type": "number",
+      "id": "Basket_subtotal",
+      "key": "basketSubtotal",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row13",
+        "col": 5
+      }
+    },
+    {
+      "text": "##### Actions",
+      "type": "text",
+      "id": "Subheading_actions",
+      "layout": {
+        "row": "row15",
+        "col": 16
+      }
+    },
+    {
+      "label": "Clear Basket",
+      "action": "submit",
+      "type": "button",
+      "id": "Btn_clear_basket",
+      "layout": {
+        "row": "row17",
+        "col": 16
+      }
+    },
+    {
+      "label": "Proceed to Checkout",
+      "action": "submit",
+      "type": "button",
+      "id": "Btn_proceed_checkout",
+      "layout": {
+        "row": "row18",
+        "col": 16
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

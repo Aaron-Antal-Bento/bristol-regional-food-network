@@ -1,0 +1,108 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0xcygfl",
+  "components": [
+    {
+      "text": "### Product Inventory Portal",
+      "type": "text",
+      "id": "Heading_product_portal",
+      "layout": {
+        "row": "Row_0",
+        "col": 16
+      }
+    },
+    {
+      "label": "Search Products",
+      "type": "textfield",
+      "id": "Field_searchQuery",
+      "key": "searchQuery",
+      "description": "Filter the product dropdown list",
+      "layout": {
+        "row": "Row_1",
+        "col": 8
+      }
+    },
+    {
+      "label": "Select a Product",
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "type": "select",
+      "id": "Field_selectedProductId",
+      "key": "selectedProductId",
+      "description": "Choose a product from the list",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "Row_1",
+        "col": 8
+      }
+    },
+    {
+      "text": "##### Selected Product Details",
+      "type": "text",
+      "id": "Subheading_product_details",
+      "layout": {
+        "row": "Row_2",
+        "col": 16
+      }
+    },
+    {
+      "label": "Product ID",
+      "type": "textfield",
+      "id": "Field_selectedProduct_id",
+      "key": "selectedProduct.id",
+      "layout": {
+        "row": "Row_3",
+        "col": 6
+      }
+    },
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "id": "Field_selectedProduct_name",
+      "key": "selectedProduct.name",
+      "layout": {
+        "row": "Row_3",
+        "col": 10
+      }
+    },
+    {
+      "label": "Available Quantity",
+      "type": "number",
+      "id": "Field_selectedProduct_quantity",
+      "key": "selectedProduct.quantity",
+      "decimalDigits": 0,
+      "layout": {
+        "row": "Row_4",
+        "col": 5
+      }
+    },
+    {
+      "label": "Unit Price",
+      "type": "number",
+      "id": "Field_selectedProduct_price",
+      "key": "selectedProduct.price",
+      "decimalDigits": 2,
+      "appearance": {
+        "prefixAdorner": "$"
+      },
+      "layout": {
+        "row": "Row_4",
+        "col": 6
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

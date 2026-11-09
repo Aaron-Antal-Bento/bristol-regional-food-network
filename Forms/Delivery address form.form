@@ -1,0 +1,166 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1tcme5m",
+  "components": [
+    {
+      "text": "### Recipient Information",
+      "type": "text",
+      "id": "Recipient_heading",
+      "layout": {
+        "row": "row_recipient_heading",
+        "col": 16
+      }
+    },
+    {
+      "label": "First Name",
+      "type": "textfield",
+      "id": "First_name",
+      "key": "firstName",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_name",
+        "col": 8
+      }
+    },
+    {
+      "label": "Last Name",
+      "type": "textfield",
+      "id": "Last_name",
+      "key": "lastName",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_name",
+        "col": 8
+      }
+    },
+    {
+      "label": "Phone Number",
+      "type": "textfield",
+      "id": "Phone_number",
+      "key": "phoneNumber",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_contact",
+        "col": 8
+      }
+    },
+    {
+      "label": "Email Address",
+      "type": "textfield",
+      "id": "Email_address",
+      "key": "emailAddress",
+      "layout": {
+        "row": "row_contact",
+        "col": 8
+      }
+    },
+    {
+      "text": "### Delivery Address Details",
+      "type": "text",
+      "id": "Address_heading",
+      "layout": {
+        "row": "row_address_heading",
+        "col": 16
+      }
+    },
+    {
+      "label": "Street Address (Line 1)",
+      "type": "textfield",
+      "id": "Street_address",
+      "key": "streetAddress",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_street",
+        "col": 10
+      }
+    },
+    {
+      "label": "Apartment, Suite, Unit, etc. (Line 2)",
+      "type": "textfield",
+      "id": "Address_line_2",
+      "key": "addressLine2",
+      "layout": {
+        "row": "row_street",
+        "col": 6
+      }
+    },
+    {
+      "label": "City",
+      "type": "textfield",
+      "id": "City",
+      "key": "city",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_city_state_zip",
+        "col": 6
+      }
+    },
+    {
+      "label": "State, Province, or Region",
+      "type": "textfield",
+      "id": "State",
+      "key": "state",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_city_state_zip",
+        "col": 5
+      }
+    },
+    {
+      "label": "Postal / ZIP Code",
+      "type": "textfield",
+      "id": "Postal_code",
+      "key": "postalCode",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_city_state_zip",
+        "col": 5
+      }
+    },
+    {
+      "label": "Country",
+      "type": "textfield",
+      "id": "Country",
+      "key": "country",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_country",
+        "col": 16
+      }
+    },
+    {
+      "label": "Submit Delivery Details",
+      "action": "submit",
+      "type": "button",
+      "id": "Submit_button",
+      "layout": {
+        "row": "row_submit",
+        "col": 16
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

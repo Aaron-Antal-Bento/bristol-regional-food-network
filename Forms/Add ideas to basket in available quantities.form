@@ -1,0 +1,126 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0d0gdsv",
+  "components": [
+    {
+      "text": "### Basket & Idea Management",
+      "type": "text",
+      "id": "Main_heading",
+      "layout": {
+        "row": "row_1",
+        "col": 16
+      }
+    },
+    {
+      "text": "Product Details",
+      "type": "text",
+      "id": "Sub_idea_info",
+      "layout": {
+        "row": "row_4",
+        "col": 16
+      }
+    },
+    {
+      "label": "Product name ",
+      "type": "textfield",
+      "id": "IdeaName",
+      "key": "ideaName",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_5",
+        "col": 8
+      }
+    },
+    {
+      "label": "Product Description",
+      "type": "textarea",
+      "id": "IdeaDescription",
+      "key": "ideaDescription",
+      "layout": {
+        "row": "row_6",
+        "col": 16
+      }
+    },
+    {
+      "text": "##### Pricing, Quantities & Validation",
+      "type": "text",
+      "id": "Sub_quantity_pricing",
+      "layout": {
+        "row": "row_8",
+        "col": 16
+      }
+    },
+    {
+      "label": "Unit Cost/Points",
+      "type": "number",
+      "id": "UnitCost",
+      "key": "unitCost",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row_9",
+        "col": 5
+      }
+    },
+    {
+      "label": "Total Available Quantity",
+      "type": "number",
+      "id": "AvailableQty",
+      "key": "availableQty",
+      "description": "Current stock/inventory limit",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_9",
+        "col": 5
+      }
+    },
+    {
+      "label": "Requested Quantity",
+      "type": "number",
+      "id": "RequestedQty",
+      "key": "requestedQty",
+      "description": "Quantity to add",
+      "validate": {
+        "required": true,
+        "min": 1
+      },
+      "layout": {
+        "row": "row_9",
+        "col": 6
+      }
+    },
+    {
+      "label": "Validation Status Approved",
+      "type": "checkbox",
+      "id": "ValidationStatus",
+      "key": "validationStatus",
+      "description": "Flag indicating if requested quantity is within available quantity limits",
+      "defaultValue": false,
+      "layout": {
+        "row": "row_10",
+        "col": 16
+      }
+    },
+    {
+      "label": "Add to Basket",
+      "action": "submit",
+      "type": "button",
+      "id": "SubmitButton",
+      "layout": {
+        "row": "row_14",
+        "col": 16
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

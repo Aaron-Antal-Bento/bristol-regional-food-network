@@ -1,0 +1,343 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_04rrac7",
+  "components": [
+    {
+      "text": "### Customer Information",
+      "type": "text",
+      "id": "Heading_customer_info",
+      "layout": {
+        "row": "row_h1",
+        "col": 16
+      }
+    },
+    {
+      "label": "Customer Name",
+      "type": "textfield",
+      "id": "CustomerName",
+      "key": "customerName",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_cust_1",
+        "col": 8
+      }
+    },
+    {
+      "label": "Email Address",
+      "type": "textfield",
+      "id": "EmailAddress",
+      "key": "emailAddress",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_cust_1",
+        "col": 8
+      }
+    },
+    {
+      "label": "Phone Number",
+      "type": "textfield",
+      "id": "PhoneNumber",
+      "key": "phoneNumber",
+      "layout": {
+        "row": "row_cust_2",
+        "col": 16
+      }
+    },
+    {
+      "text": "### Shipping Information",
+      "type": "text",
+      "id": "Heading_shipping_info",
+      "layout": {
+        "row": "row_h2",
+        "col": 16
+      }
+    },
+    {
+      "label": "Recipient Name",
+      "type": "textfield",
+      "id": "RecipientName",
+      "key": "recipientName",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_1",
+        "col": 16
+      }
+    },
+    {
+      "label": "Street Address",
+      "type": "textfield",
+      "id": "ShippingStreet",
+      "key": "shippingStreet",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_2",
+        "col": 16
+      }
+    },
+    {
+      "label": "City",
+      "type": "textfield",
+      "id": "ShippingCity",
+      "key": "shippingCity",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_3",
+        "col": 6
+      }
+    },
+    {
+      "label": "State/Province",
+      "type": "textfield",
+      "id": "ShippingState",
+      "key": "shippingState",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_3",
+        "col": 5
+      }
+    },
+    {
+      "label": "Postal Code",
+      "type": "textfield",
+      "id": "ShippingPostalCode",
+      "key": "shippingPostalCode",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_3",
+        "col": 5
+      }
+    },
+    {
+      "label": "Country",
+      "values": [
+        {
+          "label": "United States",
+          "value": "US"
+        },
+        {
+          "label": "Canada",
+          "value": "CA"
+        },
+        {
+          "label": "United Kingdom",
+          "value": "GB"
+        },
+        {
+          "label": "Germany",
+          "value": "DE"
+        }
+      ],
+      "type": "select",
+      "id": "ShippingCountry",
+      "key": "shippingCountry",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_4",
+        "col": 8
+      }
+    },
+    {
+      "label": "Shipping Method",
+      "values": [
+        {
+          "label": "Standard Delivery",
+          "value": "standard"
+        },
+        {
+          "label": "Express Delivery",
+          "value": "express"
+        },
+        {
+          "label": "Next-Day Air",
+          "value": "next_day"
+        }
+      ],
+      "type": "select",
+      "id": "ShippingMethod",
+      "key": "shippingMethod",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_ship_4",
+        "col": 8
+      }
+    },
+    {
+      "subtype": "date",
+      "type": "datetime",
+      "id": "EstimatedDeliveryDate",
+      "key": "estimatedDeliveryDate",
+      "dateLabel": "Estimated Delivery Date",
+      "layout": {
+        "row": "row_ship_5",
+        "col": 16
+      }
+    },
+    {
+      "text": "### Order Items",
+      "type": "text",
+      "id": "Heading_order_items",
+      "layout": {
+        "row": "row_h5",
+        "col": 16
+      }
+    },
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "id": "ProductName",
+      "key": "productName",
+      "layout": {
+        "row": "row_item_1",
+        "col": 12
+      }
+    },
+    {
+      "label": "Quantity",
+      "type": "number",
+      "id": "Quantity",
+      "key": "quantity",
+      "decimalDigits": 0,
+      "layout": {
+        "row": "row_item_3",
+        "col": 4
+      }
+    },
+    {
+      "label": "Unit Price",
+      "type": "number",
+      "id": "UnitPrice",
+      "key": "unitPrice",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row_item_3",
+        "col": 6
+      }
+    },
+    {
+      "label": "Item Total Price",
+      "type": "number",
+      "id": "ItemTotalPrice",
+      "key": "itemTotalPrice",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row_item_3",
+        "col": 6
+      }
+    },
+    {
+      "text": "### Order Summary & Pricing",
+      "type": "text",
+      "id": "Heading_order_summary",
+      "layout": {
+        "row": "row_h6",
+        "col": 16
+      }
+    },
+    {
+      "label": "Subtotal",
+      "type": "number",
+      "id": "Subtotal",
+      "key": "subtotal",
+      "decimalDigits": 2,
+      "layout": {
+        "row": "row_sum_1",
+        "col": 8
+      }
+    },
+    {
+      "label": "Total Amount Due",
+      "type": "number",
+      "id": "TotalAmountDue",
+      "key": "totalAmountDue",
+      "decimalDigits": 2,
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_sum_3",
+        "col": 10
+      }
+    },
+    {
+      "text": "### Terms & Declarations",
+      "type": "text",
+      "id": "Heading_terms",
+      "layout": {
+        "row": "row_h7",
+        "col": 16
+      }
+    },
+    {
+      "label": "I accept the Terms and Conditions",
+      "type": "checkbox",
+      "id": "TermsAccepted",
+      "key": "termsAccepted",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_terms_1",
+        "col": 16
+      }
+    },
+    {
+      "label": "I acknowledge the Privacy Policy",
+      "type": "checkbox",
+      "id": "PrivacyPolicyAcknowledged",
+      "key": "privacyPolicyAcknowledged",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "row_terms_2",
+        "col": 16
+      }
+    },
+    {
+      "label": "I want to receive marketing updates and promotions",
+      "type": "checkbox",
+      "id": "MarketingOptIn",
+      "key": "marketingOptIn",
+      "layout": {
+        "row": "row_terms_3",
+        "col": 16
+      }
+    },
+    {
+      "label": "Place Order",
+      "action": "submit",
+      "type": "button",
+      "id": "SubmitBtn",
+      "layout": {
+        "row": "row_btn",
+        "col": 16
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

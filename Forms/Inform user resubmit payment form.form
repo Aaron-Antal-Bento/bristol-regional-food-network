@@ -1,0 +1,211 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0qjnfxq",
+  "components": [
+    {
+      "text": "### Payment Resubmission Request",
+      "id": "Heading_title",
+      "type": "text",
+      "layout": {
+        "row": "Row_0",
+        "col": 16
+      }
+    },
+    {
+      "text": "##### Payment Information",
+      "id": "Subheading_payment_info",
+      "type": "text",
+      "layout": {
+        "row": "Row_4",
+        "col": 16
+      }
+    },
+    {
+      "label": "Payment Method Selection",
+      "values": [
+        {
+          "label": "Credit Card",
+          "value": "credit_card"
+        },
+        {
+          "label": "Debit Card",
+          "value": "debit_card"
+        },
+        {
+          "label": "Bank Transfer",
+          "value": "bank_transfer"
+        }
+      ],
+      "id": "Select_payment_method",
+      "type": "select",
+      "key": "paymentMethod",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "Row_5",
+        "col": 6
+      }
+    },
+    {
+      "label": "Cardholder Name",
+      "id": "Textfield_cardholder",
+      "type": "textfield",
+      "key": "cardholderName",
+      "layout": {
+        "row": "Row_5",
+        "col": 10
+      }
+    },
+    {
+      "label": "Card / Account Number",
+      "id": "Textfield_card_number",
+      "type": "textfield",
+      "key": "cardNumber",
+      "layout": {
+        "row": "Row_6",
+        "col": 8
+      }
+    },
+    {
+      "label": "Expiration Date (MM/YYYY)",
+      "id": "Textfield_expiry",
+      "type": "textfield",
+      "key": "expirationDate",
+      "layout": {
+        "row": "Row_6",
+        "col": 4
+      }
+    },
+    {
+      "label": "Card Security Code (CVV/CVC)",
+      "id": "Textfield_cvv",
+      "type": "textfield",
+      "key": "cvv",
+      "layout": {
+        "row": "Row_6",
+        "col": 4
+      }
+    },
+    {
+      "text": "##### Billing Address",
+      "id": "Subheading_billing",
+      "type": "text",
+      "layout": {
+        "row": "Row_7",
+        "col": 16
+      }
+    },
+    {
+      "label": "Street",
+      "id": "Textfield_street",
+      "type": "textfield",
+      "key": "billingStreet",
+      "layout": {
+        "row": "Row_8",
+        "col": 16
+      }
+    },
+    {
+      "label": "City",
+      "id": "Textfield_city",
+      "type": "textfield",
+      "key": "billingCity",
+      "layout": {
+        "row": "Row_9",
+        "col": 6
+      }
+    },
+    {
+      "label": "State",
+      "id": "Textfield_state",
+      "type": "textfield",
+      "key": "billingState",
+      "layout": {
+        "row": "Row_9",
+        "col": 4
+      }
+    },
+    {
+      "label": "Postal Code",
+      "id": "Textfield_postal",
+      "type": "textfield",
+      "key": "billingPostalCode",
+      "layout": {
+        "row": "Row_9",
+        "col": 6
+      }
+    },
+    {
+      "label": "Country",
+      "id": "Textfield_country",
+      "type": "textfield",
+      "key": "billingCountry",
+      "layout": {
+        "row": "Row_10",
+        "col": 16
+      }
+    },
+    {
+      "text": "##### Confirmation",
+      "id": "Subheading_confirmation",
+      "type": "text",
+      "layout": {
+        "row": "Row_11",
+        "col": 16
+      }
+    },
+    {
+      "label": "I confirm and accept the Terms and Conditions",
+      "id": "Checkbox_terms",
+      "type": "checkbox",
+      "key": "confirmTerms",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "Row_12",
+        "col": 16
+      }
+    },
+    {
+      "label": "Reason for Cancellation (Conditional)",
+      "id": "Textarea_cancel_reason",
+      "type": "textarea",
+      "key": "cancelReason",
+      "description": "Please provide a reason if you choose to decline or cancel resubmission.",
+      "layout": {
+        "row": "Row_13",
+        "col": 16
+      }
+    },
+    {
+      "label": "Proceed with Payment",
+      "action": "submit",
+      "id": "Button_proceed",
+      "type": "button",
+      "layout": {
+        "row": "Row_14",
+        "col": 16
+      }
+    },
+    {
+      "label": "Cancel Payment / Decline Resubmission",
+      "action": "submit",
+      "id": "Button_cancel",
+      "type": "button",
+      "layout": {
+        "row": "Row_15",
+        "col": 16
+      }
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}
