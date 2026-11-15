@@ -3,7 +3,7 @@
   "executionPlatformVersion": "8.10.0",
   "exporter": {
     "name": "Camunda Web Modeler",
-    "version": "e24511c"
+    "version": "64767e4"
   },
   "schemaVersion": 19,
   "id": "Form_0d0gdsv",
@@ -59,7 +59,7 @@
       }
     },
     {
-      "label": "Unit Cost/Points",
+      "label": "Unit Cost",
       "type": "number",
       "id": "UnitCost",
       "key": "unitCost",
@@ -74,7 +74,7 @@
       "type": "number",
       "id": "AvailableQty",
       "key": "availableQty",
-      "description": "Current stock/inventory limit",
+      "description": "Current stock",
       "validate": {
         "required": true
       },
