@@ -3,7 +3,7 @@
   "executionPlatformVersion": "8.10.0",
   "exporter": {
     "name": "Camunda Web Modeler",
-    "version": "64767e4"
+    "version": "1921008"
   },
   "schemaVersion": 19,
   "id": "Form_0xcygfl",
@@ -15,17 +15,6 @@
       "layout": {
         "row": "Row_0",
         "col": 16
-      }
-    },
-    {
-      "label": "Search Products",
-      "type": "textfield",
-      "id": "Field_searchQuery",
-      "key": "searchQuery",
-      "description": "Filter the product dropdown list",
-      "layout": {
-        "row": "Row_1",
-        "col": 8
       }
     },
     {

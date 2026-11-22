@@ -18,72 +18,6 @@
       }
     },
     {
-      "text": "Product Details",
-      "type": "text",
-      "id": "Sub_idea_info",
-      "layout": {
-        "row": "row_4",
-        "col": 16
-      }
-    },
-    {
-      "label": "Product name ",
-      "type": "textfield",
-      "id": "IdeaName",
-      "key": "ideaName",
-      "validate": {
-        "required": true
-      },
-      "layout": {
-        "row": "row_5",
-        "col": 8
-      }
-    },
-    {
-      "label": "Product Description",
-      "type": "textarea",
-      "id": "IdeaDescription",
-      "key": "ideaDescription",
-      "layout": {
-        "row": "row_6",
-        "col": 16
-      }
-    },
-    {
-      "text": "##### Pricing, Quantities & Validation",
-      "type": "text",
-      "id": "Sub_quantity_pricing",
-      "layout": {
-        "row": "row_8",
-        "col": 16
-      }
-    },
-    {
-      "label": "Unit Cost",
-      "type": "number",
-      "id": "UnitCost",
-      "key": "unitCost",
-      "decimalDigits": 2,
-      "layout": {
-        "row": "row_9",
-        "col": 5
-      }
-    },
-    {
-      "label": "Total Available Quantity",
-      "type": "number",
-      "id": "AvailableQty",
-      "key": "availableQty",
-      "description": "Current stock",
-      "validate": {
-        "required": true
-      },
-      "layout": {
-        "row": "row_9",
-        "col": 5
-      }
-    },
-    {
       "label": "Requested Quantity",
       "type": "number",
       "id": "RequestedQty",
@@ -96,18 +30,6 @@
       "layout": {
         "row": "row_9",
         "col": 6
-      }
-    },
-    {
-      "label": "Validation Status Approved",
-      "type": "checkbox",
-      "id": "ValidationStatus",
-      "key": "validationStatus",
-      "description": "Flag indicating if requested quantity is within available quantity limits",
-      "defaultValue": false,
-      "layout": {
-        "row": "row_10",
-        "col": 16
       }
     },
     {

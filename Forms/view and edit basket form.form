@@ -3,7 +3,7 @@
   "executionPlatformVersion": "8.10.0",
   "exporter": {
     "name": "Camunda Web Modeler",
-    "version": "64767e4"
+    "version": "1921008"
   },
   "schemaVersion": 19,
   "id": "Form_1mm1329",
@@ -124,14 +124,26 @@
       }
     },
     {
+      "label": "Continue Shopping",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1svtvr3",
+        "columns": null
+      },
+      "id": "Field_1b19za7",
+      "properties": { }
+    },
+    {
       "label": "Proceed to Checkout",
       "action": "submit",
       "type": "button",
-      "id": "Btn_proceed_checkout",
       "layout": {
-        "row": "row18",
-        "col": 16
-      }
+        "row": "Row_1svtvr3",
+        "columns": null
+      },
+      "id": "Field_1ww2nm5",
+      "properties": { }
     }
   ],
   "generated": true,

@@ -1,0 +1,60 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "1921008"
+  },
+  "schemaVersion": 19,
+  "id": "Form_fytbh0m",
+  "components": [
+    {
+      "text": "### Product Inventory Portal",
+      "type": "text",
+      "id": "Heading_product_portal",
+      "layout": {
+        "row": "Row_0",
+        "col": 16
+      }
+    },
+    {
+      "label": "Search For Products",
+      "type": "textfield",
+      "id": "Field_searchQuery",
+      "key": "searchQuery",
+      "layout": {
+        "row": "Row_1",
+        "col": 8
+      }
+    },
+    {
+      "label": "Search",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1",
+        "columns": null
+      },
+      "id": "Field_0ajzwkf"
+    },
+    {
+      "label": "Categories",
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_0hotjzz",
+        "columns": null
+      },
+      "id": "Field_0v8nra8",
+      "key": "select_gost0s",
+      "description": "Select product categories"
+    }
+  ],
+  "generated": true,
+  "type": "default"
+}

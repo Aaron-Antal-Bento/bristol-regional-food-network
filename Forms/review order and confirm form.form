@@ -3,7 +3,7 @@
   "executionPlatformVersion": "8.10.0",
   "exporter": {
     "name": "Camunda Web Modeler",
-    "version": "64767e4"
+    "version": "1921008"
   },
   "schemaVersion": 19,
   "id": "Form_04rrac7",
@@ -197,7 +197,40 @@
       }
     },
     {
-      "text": "### Order Items",
+      "text": "### Select Delivery Arrangements",
+      "type": "text",
+      "layout": {
+        "row": "Row_0xrekbz",
+        "columns": null
+      },
+      "id": "Field_1ar5m0b"
+    },
+    {
+      "label": "Delivery options",
+      "values": [
+        {
+          "label": "Option 1",
+          "value": "1"
+        },
+        {
+          "label": "Option 2",
+          "value": "2"
+        },
+        {
+          "label": "Option 3",
+          "value": "3"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_16pr3ck",
+        "columns": null
+      },
+      "id": "Field_1ijb8sx",
+      "key": "selectedDeliveryMethod"
+    },
+    {
+      "text": "### Order Details",
       "type": "text",
       "id": "Heading_order_items",
       "layout": {
@@ -328,7 +361,7 @@
       }
     },
     {
-      "label": "Place Order",
+      "label": "Proceed to Payment",
       "action": "submit",
       "type": "button",
       "id": "SubmitBtn",
