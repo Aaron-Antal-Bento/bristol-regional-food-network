@@ -3,7 +3,7 @@
   "executionPlatformVersion": "8.10.0",
   "exporter": {
     "name": "Camunda Web Modeler",
-    "version": "e24511c"
+    "version": "4c2418b"
   },
   "schemaVersion": 19,
   "id": "Form_1mrc6jb",
@@ -16,6 +16,29 @@
         "row": "row_heading",
         "col": 16
       }
+    },
+    {
+      "label": "Order ID",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1x6y797",
+        "columns": 14
+      },
+      "id": "Field_0864a1k",
+      "key": "orderID",
+      "readonly": true
+    },
+    {
+      "label": "Multi-Producer Order",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1x6y797",
+        "columns": null
+      },
+      "id": "Field_1fza73b",
+      "key": "isMultiProducerOrder",
+      "disabled": false,
+      "readonly": true
     },
     {
       "label": "Cardholder Name",

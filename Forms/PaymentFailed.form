@@ -1,0 +1,52 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "4c2418b"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1yartcv",
+  "components": [
+    {
+      "text": "# Payment Failed",
+      "type": "text",
+      "layout": {
+        "row": "Row_1kmbrjd",
+        "columns": null
+      },
+      "id": "Field_00pah5o"
+    },
+    {
+      "text": "Would you like to continue your order?\n ",
+      "type": "text",
+      "layout": {
+        "row": "Row_1brpzo2",
+        "columns": null
+      },
+      "id": "Field_0c387d0"
+    },
+    {
+      "label": "Continue?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_04tu80x",
+        "columns": null
+      },
+      "id": "Field_0r89ewl",
+      "key": "continueOrder",
+      "defaultValue": true
+    },
+    {
+      "label": "Submit",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1l5cjv1",
+        "columns": null
+      },
+      "id": "Field_18vke4l"
+    }
+  ],
+  "type": "default"
+}
